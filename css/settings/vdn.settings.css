@@ -1,0 +1,390 @@
+/**
+ * Voice Dialog - Navigation: Settings Css
+ */
+
+/* Common CSS */
+button[disabled], input[type=submit][disabled] {
+    cursor: not-allowed !important;
+}
+#vdNavigationSettingsWrapper {
+    background-color: #f1f1f1;
+    padding: 5px;
+}
+#vdNavigationSettingsWrapper table {
+    border-collapse:collapse;
+    width: 100%;
+}
+.vd-navigation-row { margin-bottom: 15px; }
+/* Clear floats after the columns */
+.vd-navigation-row:after, .vd-navigation-basic-config-sub-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* End of Common CSS */
+/* Header */
+.vd-navigation-help {
+    float: right !important;
+    padding: 5px 20px !important;
+    color: #000000 !important;	
+    border-radius: 0px !important;
+    font-size: 0.8rem !important;
+    font-weight: 400 !important;
+    font-style: italic !important;
+    cursor: pointer !important;
+    border: 1px solid #000000;
+}
+.vd-navigation-help >a{
+    color: #ff0000 !important;
+}
+#vdnHashTag {
+    font-size: 1.3em !important;
+    float: left !important;
+    color: #1DA1F2 !important;
+}
+#vdNavigationSettingsWrapper #vdNavigationSettingsPageHeading {
+    font-size: 1.5em;
+    color: #FFFFFF !important;
+    cursor: default;
+}
+#vdNavigationSettingsWrapper #vdNavigationSettingsPageSubHeading { 
+    font-size: 1.2em; 
+    cursor: default;
+}
+#vdNavigationSettingsWrapper #vdNavigationSettingsPageHeaderLogo {
+    float: right;
+}
+.vd-navigation-setting-header-column-1,
+.vd-navigation-setting-header-column-2 { float: left; }
+.vd-navigation-setting-header-column-1 { padding-top: 10px; }
+.vd-navigation-setting-header-column-1 { width: 50%; }
+.vd-navigation-setting-header-column-2 { width: 50%; }
+#vdNavigationSettingsHeader {
+    border: 7px solid #808080 !important;
+    border-radius: 10px !important;
+    padding: 0 15px !important;
+    background-color: #000000 !important;
+    background: #000000 !important;
+}
+#vdNavigationSettingsHeader.vd-navigation-row { margin-bottom: 5px; }
+#vdNavigationFreeTrialInfoWrapper { border: 1px dotted #000000; }
+.vd-navigation-free-trial-info {
+	background-color: #ffe499 !important;
+	padding: 5px !important;
+	margin: 5px !important;
+}
+#vdNavigationSettingsWrapper #vdnUuidLabel {
+	font-size: 0.9rem !important;
+	font-weight: 500 !important;
+	padding-left: 5px !important;
+}
+/* End of Header */
+/* Basic Configuration sections */
+#vdNavigationBasicConfigSettingsSave {
+    float: right !important;
+}
+#vdnVoiceAndLanguage {
+    background-color: #F5F5F5 !important;
+    padding: 10px 5px !important;
+    font-weight: 500 !important;
+}
+#vdnVoiceAndLanguage>select {
+    width: auto !important;
+    font-size: 1em!important;
+	cursor: pointer !important;
+}
+.vd-navigation-setting-basic-config-column {
+    float: left;
+    padding: 15px !important;
+}
+#vdNavigationBasicConfigSection {
+    border-left: 15px solid #000000;
+}
+#vdNavigationBasicConfigSection.vd-navigation-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.vd-navigation-basic-config-sub-row { padding: 5px; }
+.vd-navigation-basic-config-attached-label-column {
+    margin-top: 1px;
+    width: 14%;
+    float: left;
+}
+.vd-navigation-basic-config-attached-input-column { width: 100%; }
+.vd-navigation-basic-config-attached-input-column input { 
+    width: 84%; 
+    margin-left: 0;
+}
+#vdNavigationBasicConfigSection .vd-navigation-row { margin-bottom: 0; }
+.vd-navigation-basic-config-dialog-type-column-1 { 
+    width: 20%;
+    float: left;
+}
+.vd-navigation-basic-config-dialog-type-column-2 { 
+    width: 80%;
+    float: left;
+ }
+ .vd-navigation-basic-config-attached-label-column{
+    text-align: center;
+    font-weight: bold;
+    background-color: #eee;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+.vdn-dotted-border { 
+    border: 1px dotted black;
+    padding: 10px;
+}
+.vdn-dotted-border span { font-size: 0.9em }
+.vdn-info-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: sub;
+    cursor: default;
+}
+#vdnFloatingButtonIcon input[type=radio]{
+    vertical-align: top !important;
+}
+#vdnGaTrackingId {
+    width: 100% !important;
+    color: "#000000";
+}
+div#vdnGaTrackingIdWrapper {
+    padding: 10px !important;
+    border: 1px solid !important;
+    margin: 15px !important;
+    background-color: #ffe499 !important;
+}
+div#vdnGaTrackingIdWrapper span#vdnGaIdError {
+    display: none;
+    font-size: 0.85em !important;
+    color: #FF0000 !important;
+    font-weight: 500 !important;
+}
+.vdn-important {
+    color: #FF0000 !important;
+}
+/* End of Basic Configuration sections */
+/* Dialog Configuration sections */
+#vdNavigationSettingsWrapper button[type=submit]:disabled, #vdNavigationSettingsWrapper input[type=submit]:disabled {
+  border: 1px solid #999999 !important;
+  background-color: #cccccc !important;
+  color: #666666 !important;
+}
+.vdn-dialog-config-dialog-header {
+    padding: 5px 10px 5px 5px !important;
+    width: auto !important;
+    float: left !important;
+    border-radius: 5px 5px 0px 0px !important; 
+}
+#vdNavigationSettingsWrapper .vd-navigation-basic-config-section-title {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    cursor: default;
+}
+#vdNavigationSettingsWrapper .vdn-configuration-header {
+    font-size: 1.1em;
+    text-align: left;
+    cursor: default;
+}
+.vdn-configuration-header h4:not(h4[id=vdnBasicConfigHeader]) { margin-bottom: 0; }
+.vd-navigation-dialog-conf-column { width: 49%; }
+.vd-navigation-dialog-config-table-odd-cell { float: left; }
+.vd-navigation-dialog-config-table-even-cell { float: right; }
+.vd-navigation-dialog-config-sub-table-cell { padding: 10px; }
+.vd-navigation-dialog-config-sub-table-cell input { width: 100%; }
+input[data-name=vd-navigation-intent-submit] {
+     width: auto !important;
+     float: right;
+}
+.vdn-url-info{
+    font-size: 0.9em;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+.vd-navigation-attached-input-cell {
+    padding-left: 10px;
+    padding-right: 5px;
+}
+#vdnEnableAllDialogCheckboxLabel {
+    float: right;
+    font-weight: normal;
+    color: white;
+    font-size: 12px;
+    background-color: black;
+    padding: 10px 10px 8px 10px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+.vdn-dialog-accessibility-info {
+    font-size: 11px;
+    font-weight: normal;
+}
+.vdn-response-audio-row {
+    background-color: #E1ECF4 !important;
+}
+.vdn-response-audio-unavailable-row {
+    background-color: #f8d7da !important;
+    color: #721c24 !important;
+}
+.vdn-response-audio-row>td, .vdn-response-audio-unavailable-row>td {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important; 
+}
+.vdn-audio-wrapper {
+    display: inline-block !important;
+    float: left !important;
+    text-align: center !important;
+}
+.vdn-audio-control-wrapper {
+    width: 60% !important;
+}
+.vdn-audio-control-wrapper>audio {
+    width: 98% !important;
+    height: 35px !important;
+    max-height: 35px !important;
+    vertical-align: middle !important;
+    outline: none !important;
+}
+.vdn-audio-file-name-wrapper {
+    width: 40% !important;
+    font-size: 0.9em !important;
+    font-weight: 500 !important;
+    font-style: italic !important;
+    height: 35px !important;
+}
+.vdn-audio-file-name-wrapper>button {
+    height: 100% !important;
+    font-size: 0.86em !important;
+    font-style: italic !important;
+    width: 95% !important;
+    cursor: default !important;
+    word-wrap: break-word !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: transparent !important;
+    background: transparent !important;
+    border: 0 !important;
+    outline: none !important;
+}
+.vdn-audio-response-unavailable-wrapper {
+    font-size: 0.8em !important;
+    font-style: italic !important;
+}
+/* End of Dialog Configuration sections */
+/* Card Effect */
+.vd-navigation-card {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+.vd-navigation-card textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+/* End of Card effects */
+/* Custom Dialog*/
+.vd-navigation-hide { display: none !important; }
+.vd-navigation-dialog-type-section { padding-right: 20px; }
+/* End of Custom Dialog*/
+
+/*Synthesizing Process indicator modal */
+#vdnLoaderModal {
+    display: none;
+    position: fixed !important;
+    z-index: 1153 !important; 
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important; 
+    height: 100% !important;
+    align-items: center !important;
+    justify-content: center !important; 
+    background-color: rgb(0,0,0) !important; 
+    background-color: rgba(0,0,0,0.4) !important;
+}
+#vdnLoaderModalContent {
+    text-align: center !important;
+    background-color: #fefefe !important;
+    padding: 10px !important;
+    border: 2px solid #3482C1 !important;
+    top: 50% !important;
+    left: 50% !important;
+    width: 270px !important;
+    height: 150px !important;
+    border-radius: 0px !important;
+    position: absolute !important;
+    transform: translate(-50%, -50%);
+}
+#vdnLoaderModalSpinner {
+    margin: 10px auto 5px auto !important;
+    display: block !important;
+}
+#vdnSynthesizingProcessHeader {
+    font-size: 0.9rem !important;
+    text-transform: uppercase !important;
+}
+#vdnTotalSynthResponseSection {
+    padding-top: 5px !important;
+}
+#vdnCurrentDialog, #vdnTotalSynthesizableDialogs{
+    font-size: 2em !important;
+    font-weight: bold !important;
+}
+#vdnSynthesizingMessage {
+    font-size: 0.7rem !important;
+}
+
+/*----Media Queries ----*/
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    /* For Full Width*/
+    .vd-navigation-basic-config-attached-input-column,
+    .vd-navigation-basic-config-attached-input-column input,
+    .vd-navigation-dialog-conf-column,
+    .vd-navigation-setting-header-column-1,
+    .vd-navigation-setting-header-column-2 { width: 100%; }
+
+    /* For Settings page header */
+    .vd-navigation-setting-header-column-1,
+    .vd-navigation-setting-header-column-2 { text-align: center; }
+    #vdNavigationSettingsWrapper #vdNavigationSettingsPageHeaderLogo { float: none; }
+
+    /* For Basic Configuration */
+    .vd-navigation-basic-config-sub-row { margin-top: 10px; }
+    #vdNavigationBasicConfigSection.vd-navigation-row { display: block !important;}
+    .vd-navigation-basic-config-attached-label-column {width: 99%; }    
+    .vd-navigation-basic-config-dialog-type-column-1, 
+    .vd-navigation-basic-config-dialog-type-column-2 { width: 50%;}
+
+    /* For Dialog Configuration */
+    .vd-navigation-dialog-config-table-even-cell { margin-top: 15px; }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* For Full Width*/
+    .vd-navigation-basic-config-attached-input-column,
+    .vd-navigation-basic-config-attached-input-column input,
+    .vd-navigation-dialog-conf-column,
+    .vd-navigation-setting-header-column-1,
+    .vd-navigation-setting-header-column-2 { width: 100%; }
+
+    /* For Settings page header */
+    .vd-navigation-setting-header-column-1,
+    .vd-navigation-setting-header-column-2 { text-align: center; }
+    #vdNavigationSettingsWrapper #vdNavigationSettingsPageHeaderLogo { float: none; }
+
+    /* For Basic Configuration */
+    .vd-navigation-basic-config-sub-row { margin-top: 10px; }
+    #vdNavigationBasicConfigSection.vd-navigation-row { display: block !important;}
+    .vd-navigation-basic-config-attached-label-column {width: 98%; }    
+    .vd-navigation-basic-config-dialog-type-column-1, 
+    .vd-navigation-basic-config-dialog-type-column-2 { width: 50%;}
+
+    /* For Dialog Configuration */
+    .vd-navigation-dialog-config-table-even-cell { margin-top: 15px; }
+}
+.vdn-hide-element { display: none !important; }
